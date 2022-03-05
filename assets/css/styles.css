@@ -1,5 +1,12 @@
+/* Import fonts */
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../SFProDisplay-Regular.ttf');
+}
+
 
 /* Global */
+
 
 *,
 *::before,
@@ -9,6 +16,7 @@
 }
 
 html {
+    font-size: 62.5%;
     font-family: 'SF Pro Display', sans-serif;
 }
 
@@ -49,7 +57,7 @@ header {
 }
 
 .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: white;
     padding: 0 1rem;
     transition: opacity .5s;
@@ -218,20 +226,20 @@ header {
     }
 
     .line-top {
-        margin-top: 3px;
+        margin-top: 0.4rem;
     }
 
     .line-bottom {
-        margin-bottom: 3px;
+        margin-top: -0.4rem;
     }
 
-    active .line-top {
+    .active .line-top {
         margin-top: 0;
         transform: rotate(45deg);
         transform: transform 3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
     }
 
-    active .line-bottom {
+    .active .line-bottom {
         margin-top: 0;
         transform: rotate(-45deg);
         transform: transform 3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
@@ -272,9 +280,8 @@ header {
 /* Footer */
 
 footer {   
-    font-size: 14px;
+    color: white;
     line-height: 20px;
-    color: #181919;
     box-sizing: border-box;
     display: block;
     background-color: #181919;
@@ -285,7 +292,6 @@ footer {
  .container {
     font-size: 14px;
     line-height: 20px;
-    color: #181919;
     box-sizing: border-box;
     width: 100%;
     max-width: 1230px;
@@ -317,34 +323,25 @@ footer {
     max-width: 605px;
  }
 
- .mini-heading-red {
-    box-sizing: border-box;
+ .mini-heading {
     position: relative;
-    z-index: 1;
     margin-bottom: 15px;
     color: crimson;
-    font-size: 12px;
+    font-size: 1rem;
     line-height: 1.25em;
     font-weight: 600;
     letter-spacing: 3px;
  }
 
  .footer-heading {
-    box-sizing: border-box;
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 20px;
-    position: relative;
-    z-index: 1;
     color: #fff;
-    line-height: 1.2em;
     font-size: 28px;
  }
 
  .form {
-    font-size: 14px;
-    line-height: 20px;
-    box-sizing: border-box;
     margin: 0 0 15px;
     color: transparent;
     margin-top: 15px;
@@ -356,34 +353,26 @@ footer {
     color: transparent;
     box-sizing: border-box;
     position: relative;
-    z-index: 1;
     display: flex;
     align-items: stretch;
     border-bottom: 1px solid #434a54;
  }
 
  .form-email {
-    box-sizing: border-box;
-    font: inherit;
     margin: 0;
     width: 100%;
     padding: 8px 12px;
     font-size: 14px;
-    line-height: 1.42857143;
     vertical-align: middle;
     height: auto;
     margin-bottom: 0;
     padding-left: 0;
     border: 0 solid #000;
     background-color: transparent;
-    font-family: Inter,sans-serif;
     color: #fff;
  }
 
  .submit-button {
-    box-sizing: border-box;
-    font: inherit;
-    margin: 0;
     display: inline-block;
     color: #fff;
     border: 0;
@@ -407,8 +396,6 @@ footer {
  }
 
  img.footer-logo {
-    line-height: 20px;
-    color: #181919;
     box-sizing: border-box;
     border: 0;
     vertical-align: middle;
@@ -422,15 +409,11 @@ footer {
     top: 0;
     right: 0;
     bottom: auto;
-    width: 100%;
     max-width: 200px;
  }
  
  .footer-content {
-    font-size: 14px;
-    line-height: 20px;
-    color: #181919;
-    box-sizing: border-box;
+    font-size: 1.6rem;
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
@@ -439,19 +422,11 @@ footer {
  }
 
  .footer-quote {
-    box-sizing: border-box;
-    max-width: 100%;
     margin-top: 20px;
-    color: #fff;
-    font-size: 16px;
-    line-height: 1.7em;
+    letter-spacing: 2px;
  }
 
  .footer-grid {
-    font-size: 14px;
-    line-height: 20px;
-    color: #181919;
-    box-sizing: border-box;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -463,8 +438,6 @@ footer {
  }
 
  .footer-link {
-    line-height: 20px;
-    box-sizing: border-box;
     display: block;
     margin-bottom: 10px;
     color: #aab2bd;
@@ -473,24 +446,17 @@ footer {
  }
 
  .social {
-    font-size: 14px;
-    line-height: 20px;
-    color: #181919;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
  }
 
  .social-link {
-    font-size: 25px;
-    line-height: 20px;
-    box-sizing: border-box;
-    background-color: transparent;
-    text-decoration: none;
-    max-width: 100%;
-    display: inline-block;
+    font-size: 20px;
     margin-right: 10px;
+    color: crimson;
+ }
+
+ .social-link:hover {
+    opacity: 0.7;
  }
