@@ -8,9 +8,6 @@
 
 <!-- Google Fonts -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     
 <!-- Import Favicons -->
 
@@ -22,41 +19,145 @@
 <!-- Import Icons -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+<!-- Stylesheet -->
+    
     <link rel="stylesheet" href="./assets/css/styles.css">
    
 </head>
 
 <!-- Header -->
 
-<header class="header" id="header">
-    <nav class="nav">
-        <div class="logo">
-            <img src="./assets/images/logos/logo.png" alt="logo" class="img">
-        </div>
-    </nav>
-    
+<header>
+    <div class="container">
+        <nav class="nav">
+            <ul class="nav-list nav-list-mobile">
+                <li class="nav-item">
+                    <div class="mobile-menu">
+                        <span class="line line-top"></span>
+                        <span class="line line-bottom"></span>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link nav-link-apple"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link nav-link-bag"></a>
+                </li>
+            </ul>
+            <!-- /.nav-list nav-list-mobile -->
+
+            <ul class="nav-list nav-list-larger">
+                <li class="nav-item nav-item-hidden">
+                    <a href="./index.html" class="nav-link nav-link-apple"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Downloads</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link nav-link-search"></a>
+                </li>
+                <li class="nav-item nav-item-hidden">
+                    <a href="#" class="nav-link nav-link-bag"></a>
+                </li>
+            </ul>
+           <!-- /.nav-list nav-list-larger --> 
+        </nav>
+    </div>
 </header>
 
 <!-- Main -->
 
-<main>
+<section class="hero section-1">
+    <div class="container"> 
+        <div class="title">
+            <h2 class="title-heading">Agamemnon Boots</h2>
+            <h3 class="title-sub-heading">Your. All. Day. Confidence</h3>
+        </div>
+        <div class="cta">
+            <a href="#" class="cta-link">
+                Learn More
+                <ion-icon name="play-circle"></ion-icon>
+            </a>
+        </div>
+    </div>
+</section>
 
-</main>
+
+<section class="hero section-2">
+    <div class="container"> 
+        <div class="title title-dark">
+            <h2 class="title-heading">Eureka Suite 2</h2>
+            <h3 class="title-sub-heading">All services in one.</h3>
+        </div>
+        <div class="cta">
+            <a href="#" class="cta-link">
+                Order Now
+                <ion-icon name="arrow-forward-circle"></ion-icon>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="hero section-3">
+    <div class="container"> 
+        <div class="title title-dark">
+            <h2 class="title-heading">Marius Odor</h2>
+            <h3 class="title-sub-heading">Your flavours in one ordor.</h3>
+        </div>
+        <div class="cta">
+            <a href="#" class="cta-link">
+                Smell Now
+                <ion-icon name="bonfire"></ion-icon>
+            </a>
+        </div>
+    </div>
+</section>
+
+
 
 <!-- Footer -->
 
-<footer>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-hero">
+            <div class="footer-contact">
+                <div class="mini-heading-red">No credit card required</div>
+                <h2 class="footer-heading">Book a demo</h2>
+                <div class="form">
+                    <form name="email-form" data-netlify="true">
+                        <input type="email" class="form-email" maxlength="256" name="Email" data-name="Email" placeholder="Your work email" id="email" required="">
+                        <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button">
+                    </form>
+                </div>
+            </div>
 
+        </div>
+        <div class="footer-content">
+
+        </div>
+    </div>
 </footer>
     
-<!-- Javascript -->
 
-<script src="./assets/js/main.js"></script>
-
-<!-- Ionicons Fonts -->
+<!-- Ionicons -->
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- Main Javascript -->
+
+<script src="./assets/js/main.js"></script>
+
 </body>
 
 
