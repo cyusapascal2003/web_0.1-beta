@@ -70,24 +70,26 @@ header {
 .nav-link-logo {
     width: 32px;
     height: 32px;
-    background: url(../images/logo-header.png) center no-repeat;
+    background: url(../images/icons/logo-header.png) center no-repeat;
     margin-top: 5px;
 }
 
 .nav-link-search {
-    width: 20px;
-    height: 20px;
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("../images/icons/search.svg") center no-repeat;
 }
 
 .nav-link-bag {
-    width: 20px;
-    height: 20px;
+    width: 1.4rem;
+    height: 4.4rem;
+    background: url("../images/icons/bag.svg") center no-repeat;
 }
 
 /* Section 1 */
 
 .section-1 {
-    background: url(../images/hero-1.jpg);
+    background: url(../images/hero/hero-1.jpg);
     margin-top: 4.4rem;
 }
 
@@ -134,13 +136,13 @@ header {
 /* Section 2 */
 
 .section-2 {
-    background: url(../images/hero-2.jpg);
+    background: url(../images/hero/hero-2.jpg);
 }
 
 /* Section 3 */
 
 .section-3 {
-    background: url(../images/hero-3.jpg);
+    background: url(../images/hero/hero-3.jpg);
 }
 
 .title-dark {
@@ -148,6 +150,18 @@ header {
 }
 
 @media screen and (max-width:1068px) {
+    .section-1 {
+        background: url("../images/hero/hero-1-medium.jpg");
+    }
+
+    .section-2 {
+        background: url("../images/hero/hero-2-medium.jpg");
+    }
+
+    .section-3 {
+        background: url("../images/hero/hero-3-medium.jpg");
+    }
+
     .hero {
         height: 65rem;
         background-size: auto 69.8rem;
@@ -169,7 +183,7 @@ header {
 }
 
 @media screen and (max-width:767px) {
-    header {
+    header{
         height: 4.8rem;
         transition: background .36s cubic-bezier(0.32, 0.08, 0.24, 1),
                     height .56s cubic-bezier(0.32, 0.08, 0.24, 1);
@@ -180,7 +194,7 @@ header {
     }
 
     .section-1 {
-        height: 4.8rem;
+        margin-top: 4.8rem;
     }
 
     .nav-list-larger {
@@ -188,7 +202,7 @@ header {
     }
 
     .nav-list {
-        margin: 0;
+        margin-top: 0;
     }
 
     .nav-list-mobile {
@@ -211,6 +225,7 @@ header {
         z-index: 1500;
         width: 100%;
         height: 100%;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -236,15 +251,29 @@ header {
     .active .line-top {
         margin-top: 0;
         transform: rotate(45deg);
-        transform: transform 3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+        transform: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
     }
 
     .active .line-bottom {
         margin-top: 0;
         transform: rotate(-45deg);
-        transform: transform 3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+        transform: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
     }
 }
+
+header.active {
+    height: 100%;
+    background-color: black;
+}
+
+.nav-link-logo {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    background: url("../images/icons/logo-header-small.png") center no-repeat;
+}
+
+
 
 
 
