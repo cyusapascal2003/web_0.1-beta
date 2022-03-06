@@ -16,7 +16,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 10px;
     font-family: 'SF Pro Display', sans-serif;
 }
 
@@ -58,7 +58,7 @@ header {
 
 .nav-link {
     font-size: 1.4rem;
-    color: white;
+    color: #fff;
     padding: 0 1rem;
     transition: opacity .5s;
 }
@@ -71,7 +71,6 @@ header {
     width: 32px;
     height: 32px;
     background: url(../images/icons/logo-header.png) center no-repeat;
-    margin-top: 5px;
 }
 
 .nav-link-search {
@@ -96,7 +95,7 @@ header {
 
 
 .title {
-    color: white;
+    color: #fff;
     text-align: center;
     padding-top: 5.5rem;
 }
@@ -232,7 +231,7 @@ header {
         position: absolute;
         width: 1.7rem;
         height: 1px;
-        background-color: white;
+        background-color: #fff;
         transition: margin-top .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
     }
 
@@ -244,24 +243,27 @@ header {
         margin-top: -0.4rem;
     }
 
-    .active .line-top {
+    .active.line-top {
         margin-top: 0;
         transform: rotate(45deg);
-        transform: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
     }
 
-    .active .line-bottom {
+    .active.line-bottom {
         margin-top: 0;
         transform: rotate(-45deg);
-        transform: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
     }
 
     header.active {
         height: 100%;
-        background-color: color;
+        background-color: #000;
     }
     
     .nav-link-logo {
+        background: url(../images/icons/logo-header-small.png) center no-repeat;
+        width: 16px;
+        height: 16px;
         position: relative;
         z-index: 1500;
     }
@@ -315,11 +317,11 @@ header {
         border-bottom: 2px solid rgba(255, 255, 255, .1);
     }
 
-    .nav-list-larger.nav-item:nth-child(9) {
+    .nav-list-larger.nav-item:nth-child(6) {
         border-bottom: none;
     }
 
-    .active.nav-list-larger.nav-item {
+    .active .nav-list-larger .nav-item {
         animation: fadeIn 1s ease-in;
     }
     
@@ -334,10 +336,45 @@ header {
     }
 }
 
+@media screen and (max-width:735px) {
+    .section-1 {
+        background: url("../images/hero/hero-1-small.jpg");
+    }
 
+    .section-2 {
+        background: url("../images/hero/hero-2-small.jpg");
+    }
 
+    .section-3 {
+        background: url("../images/hero/hero-3-small.jpg");
+    }
 
+    .hero {
+        height: 50rem;
+        background-size: auto 54.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
 
+    .title {
+        padding-top: 3.7rem;
+    }
+
+    .title-heading {
+        font-size: 3.2rem;
+    }
+
+    .title-sub-heading {
+        font-size: 1.9rem;
+    }
+
+    .cta {
+        margin-top: .7rem;
+    }
+
+    .cta-link {
+        font-size: 1.9rem;
+    }
 
 
 
@@ -374,7 +411,7 @@ footer {
     padding-bottom: 40px;
  }
 
- .container {
+ .footer-container {
     font-size: 14px;
     line-height: 20px;
     box-sizing: border-box;
