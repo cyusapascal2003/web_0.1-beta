@@ -97,7 +97,7 @@ header {
 .title {
     color: #fff;
     text-align: center;
-    padding-top: 5.5rem;
+    padding-top: 5.5rem;     
 }
 
 .title-heading {
@@ -146,6 +146,24 @@ header {
 
 .title-dark {
     color: rgb(146, 146, 68);
+}
+
+
+/* Moved to bottom of all section styles
+   To keep consistency
+*/
+
+.hero {
+    height: 69.2rem;
+    background-size: auto 73.6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: .1rem solid #fff;
+    border-bottom: .1rem solid #fff;
+}
+
+.section-1 {
+    border-top: none;
 }
 
 @media screen and (max-width:1068px) {
@@ -375,27 +393,7 @@ header {
     .cta-link {
         font-size: 1.9rem;
     }
-
-
-
-
-/* Moved to bottom of all section styles
-   To keep consistency
-*/
-
-.hero {
-    height: 69.2rem;
-    background-size: auto 73.6rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-top: .1rem solid white;
-    border-bottom: .1rem solid white;
 }
-
-.section-1 {
-    border-top: none;
-}
-
 
 
 
@@ -564,5 +562,5 @@ footer {
  }
 
  .social-link:hover {
-    opacity: 0.7;
+     opacity: 0.7;
  }
