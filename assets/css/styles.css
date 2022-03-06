@@ -395,7 +395,7 @@ footer {
     background-clip: border-box;
  }
 
- img.footer-logo {
+/*  img.footer-logo {
     box-sizing: border-box;
     border: 0;
     vertical-align: middle;
@@ -410,7 +410,7 @@ footer {
     right: 0;
     bottom: auto;
     max-width: 200px;
- }
+ } */
  
  .footer-content {
     font-size: 1.6rem;
